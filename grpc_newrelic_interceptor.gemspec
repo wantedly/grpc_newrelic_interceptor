@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nao Minami"]
   spec.email         = ["south37777@gmail.com"]
 
-  spec.summary       = %q{An interceptor for using gRPC with New Relic.}
-  spec.description   = %q{An interceptor for using gRPC with New Relic.}
+  spec.summary       = %q{An interceptor for using New Relic with gRPC.}
+  spec.description   = %q{An interceptor for using New Relic with gRPC.}
   spec.homepage      = "https://github.com/south37/grpc_newrelic_interceptor"
   spec.license       = "MIT"
 

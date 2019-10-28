@@ -1,5 +1,5 @@
 # GrpcNewrelicInterceptor
-
+An interceptor for using New Relic with gRPC.
 
 ## Installation
 
