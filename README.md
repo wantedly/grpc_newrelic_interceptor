@@ -19,6 +19,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Server
+
 ```ruby
 require 'grpc'
 require 'grpc_newrelic_interceptor'
@@ -27,11 +29,24 @@ NewRelic::Agent.manual_start  # start newrelic agent
 
 server = GRPC::RpcServer.new(
   interceptors: [
-    GrpcNewrelicInterceptor.new,
+    GrpcNewrelicInterceptor::ServerInterceptor.new,
   ]
 )
 server.handle(MyHandler.new)
 server.run_till_terminated_or_interrupted(['SIGINT'])
+```
+
+### Client
+
+```ruby
+require 'grpc'
+require 'grpc_newrelic_interceptor'
+
+url = "dns:test-service:80"
+stub = TestService::Stub.new(url, :this_channel_is_insecure, interceptors: [
+  GrpcNewrelicInterceptor::ClientInterceptor.new,
+])
+stub.hello_rpc
 ```
 
 ## Development
