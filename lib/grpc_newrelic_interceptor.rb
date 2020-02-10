@@ -1,3 +1,4 @@
+require "grpc_newrelic_interceptor/client_interceptor"
 require "grpc_newrelic_interceptor/server_interceptor"
 require "grpc_newrelic_interceptor/version"
 
