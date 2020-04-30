@@ -1,5 +1,5 @@
-module GrpcNewrelicInterceptor::ServerInterceptor
-  module Ext
+module GrpcNewrelicInterceptor
+  module ServerInterceptorExt
     def request_response(request:, call:, method:)
       return super if !newrelic_enabled?
 
@@ -25,5 +25,5 @@ module GrpcNewrelicInterceptor::ServerInterceptor
     end
   end
 
-  ::GRPC::ServerInterceptor.prepend Ext
+  ::GRPC::ServerInterceptor.prepend ServerInterceptorExt
 end
