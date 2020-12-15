@@ -49,13 +49,13 @@ module GrpcNewrelicInterceptor
     # @param [Method] method
     # @return [String]
     def get_service_name(method)
-      method.owner.service_name
+      method.receiver.class.service_name
     end
 
     # @param [Method] method
     # @return [String]
     def get_partial_name(method)
-      "#{method.owner.name}/#{method.name}"
+      "#{method.receiver.class.name}/#{method.name}"
     end
 
     # @param [Method] method
