@@ -4,6 +4,7 @@
   - Allow newrelic_rpm 7.x and 8.x https://github.com/wantedly/grpc_newrelic_interceptor/pull/11
 - Misc
   - Migrate to GitHub Actions https://github.com/wantedly/grpc_newrelic_interceptor/pull/10
+  - Set up dependabot https://github.com/wantedly/grpc_newrelic_interceptor/pull/12
 
 ## 0.0.3
 
