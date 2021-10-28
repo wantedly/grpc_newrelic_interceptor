@@ -1,5 +1,7 @@
 ## Unreleased
 
+- Added
+  - Allow newrelic_rpm 7.x and 8.x https://github.com/wantedly/grpc_newrelic_interceptor/pull/11
 - Misc
   - Migrate to GitHub Actions https://github.com/wantedly/grpc_newrelic_interceptor/pull/10
 
