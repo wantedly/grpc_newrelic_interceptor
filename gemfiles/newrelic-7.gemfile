@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 # Specify your gem's dependencies in grpc_newrelic_interceptor.gemspec
-gemspec
+gemspec path: ".."
 
-gem "newrelic_rpm", "~> 8.0"
+gem "newrelic_rpm", "~> 7.0"
+
