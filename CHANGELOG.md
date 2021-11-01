@@ -1,4 +1,4 @@
-## Unreleased
+## 0.0.4
 
 - Added
   - Allow newrelic_rpm 7.x and 8.x https://github.com/wantedly/grpc_newrelic_interceptor/pull/11
