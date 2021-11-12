@@ -59,7 +59,7 @@ describe GrpcNewrelicInterceptor do
       end
 
       it "calls NewRelic::Agent::Tracer.in_transaction" do
-        expect(NewRelic::Agent::Tracer).to receive(:in_transaction).with({
+        expect(NewRelic::Agent::Tracer).to receive(:in_transaction).with(
           partial_name: "TestModule::TestService/hello_rpc",
           category:     :rack,
           options:      {
@@ -72,7 +72,7 @@ describe GrpcNewrelicInterceptor do
               value: "World",
             },
           }
-        })
+        )
         subject
       end
     end
@@ -123,7 +123,7 @@ describe GrpcNewrelicInterceptor do
       end
 
       it "calls NewRelic::Agent::Tracer.in_transaction with filtered params" do
-        expect(NewRelic::Agent::Tracer).to receive(:in_transaction).with({
+        expect(NewRelic::Agent::Tracer).to receive(:in_transaction).with(
           partial_name: "TestModule::TestService/hello_rpc",
           category:     :rack,
           options:      {
@@ -136,7 +136,7 @@ describe GrpcNewrelicInterceptor do
               value: "[FILTERED]",
             },
           }
-        })
+        )
         subject
       end
     end
