@@ -37,7 +37,7 @@ module GrpcNewrelicInterceptor
           filtered_params: filter(request.to_h),
         }
       }
-      NewRelic::Agent::Tracer.in_transaction(transaction_options) do
+      NewRelic::Agent::Tracer.in_transaction(**transaction_options) do
         yield
       end
     end
