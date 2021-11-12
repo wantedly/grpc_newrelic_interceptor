@@ -1,3 +1,10 @@
+## 0.0.5
+
+- Fixed
+  - Support Ruby 3.0 keyword arguments https://github.com/wantedly/grpc_newrelic_interceptor/pull/15
+- Misc
+  - Bump actions/checkout from 2.3.5 to 2.4.0 https://github.com/wantedly/grpc_newrelic_interceptor/pull/14
+
 ## 0.0.4
 
 - Added
