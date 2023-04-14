@@ -31,6 +31,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry"
   spec.add_development_dependency "pry-doc"
   spec.add_development_dependency "google-protobuf"
-  spec.add_dependency "newrelic_rpm", ">= 6.0", "< 9.0"
+  spec.add_dependency "newrelic_rpm", ">= 6.0", "< 10.0"
   spec.add_dependency "grpc"
 end
