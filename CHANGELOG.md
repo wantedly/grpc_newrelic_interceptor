@@ -1,3 +1,10 @@
+## 0.0.6
+
+- Misc
+  - Support newrelic 9.0
+  - Support Ruby 3.1 and 3.2
+  - Drop support for Ruby < 3.0
+
 ## 0.0.5
 
 - Fixed
